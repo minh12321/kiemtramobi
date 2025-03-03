@@ -7,13 +7,14 @@ const ScanScreen = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-        <Image source={require('../assets/icon/back.png')} style={styles.backIcon} />
-      </TouchableOpacity>
 
       <Image source={require('../assets/bottle.png')} style={styles.productImage} />
       <Image source={require('../assets/khung1.png')} style={styles.scan} />
       <Image source={require('../assets/khung2.png')} style={styles.scan2} />
+      
+      <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
+        <Image source={require('../assets/icon/back.png')} style={styles.backIcon} />
+      </TouchableOpacity>
 
       <View style={styles.infoBox}>
         <Image source={require('../assets/bottle.png')} style={styles.thumbnail} />
@@ -28,7 +29,7 @@ const ScanScreen = () => {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#f5f5f5', alignItems: 'center', justifyContent: 'center' },
-  backButton: { position: 'absolute', top: 0, left: 20, padding: 10 ,marginBottom:-1000,marginTop: 0 ,},
+  backButton: { position: 'absolute', top: 40,left: 20, padding: 10 ,marginBottom:-1000,marginTop: 0 ,},
   backIcon: { width: 30, height: 30 },
   productImage: { width: '100%', height: 900, resizeMode: 'contain', marginTop: -50 , },
   infoBox: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#fff', padding: 20, borderRadius: 10, marginTop: 200 ,width:360,},

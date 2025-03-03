@@ -4,5 +4,5 @@
 
 ## Kết quả
 
-![Hình 1](530f2bda-5d77-4105-b7b1-ca7d3db0472f.jpg)
-![Hình 1](ec17c7cd-1a9f-4d62-afc5-7790fe40c61e.jpg)
+![Hình 1](07219f65-2fcd-4c13-a6d0-be725476205c.jpg)
+![Hình 1](f725d1f4-8260-4aae-b10d-c1304ba62ecf.jpg)

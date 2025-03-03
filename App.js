@@ -31,6 +31,14 @@ export default function App() {
             title: "Home",
           }}
         />
+        <Tab.Screen 
+          name="scanStack" 
+          component={ScanScreen} 
+          options={{
+            tabBarIcon: ({ color, size }) => <Ionicons name="home-outline" size={size} color={color} />,
+            title: "scan",
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );

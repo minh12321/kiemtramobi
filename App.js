@@ -35,7 +35,7 @@ export default function App() {
           name="scanStack" 
           component={ScanScreen} 
           options={{
-            tabBarIcon: ({ color, size }) => <Ionicons name="home-outline" size={size} color={color} />,
+            tabBarIcon: ({ color, size }) => <Ionicons name="scan-outline" size={size} color={color} />,
             title: "scan",
           }}
         />

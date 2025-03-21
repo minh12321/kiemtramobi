@@ -1,16 +1,19 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.greeting}>Hello 👋</Text>
-        <Text style={styles.name}>Christie Doe</Text>
+        <Text style={styles.greeting}>Hello 👋<View><Image source={require('../assets/MaskGroup.png')} style={styles.image} /></View></Text>
+        <Text style={styles.name}>Cao Minh</Text>
         {/* <Image source={require('../assets/icon/profile.png')} style={styles.profileImage} /> */}
+        
+        
       </View>
-
+      
       {/* Insights */}
       <Text style={styles.sectionTitle}>Your Insights</Text>
       <View style={styles.grid}>
@@ -39,6 +42,10 @@ const HomeScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
+      <Text style={styles.sectionTitle}>Explore more                                          <Ionicons name="arrow-forward-outline" size={25}  /></Text>
+
+
+
     </View>
   );
 };
@@ -53,8 +60,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'left',
     justifyContent: 'space-between',
-    marginBottom: 20,
-    marginTop:20,
+    marginBottom: 40,
+    marginTop:30,
   },
   greeting: {
     fontSize: 30,
@@ -70,9 +77,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: 'bold',
     marginVertical: 10,
+    marginBottom: 40
   },
   grid: {
     flexDirection: 'row',
@@ -81,11 +89,12 @@ const styles = StyleSheet.create({
   },
   card: {
     width: '48%',
+    height:150,
     backgroundColor: '#F5F5F5',
-    padding: 15,
+    padding: 30,
     borderRadius: 10,
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 15,
   },
   icon: {
     width: 40,
@@ -110,6 +119,13 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
   },
+  image:{
+    right:0,
+    width:50,
+    height:50,
+    borderRadius:25,
+    marginLeft:240,
+  }
 });
 
 export default HomeScreen;
